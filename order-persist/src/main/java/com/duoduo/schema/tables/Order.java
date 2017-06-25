@@ -36,7 +36,7 @@ import org.jooq.impl.TableImpl;
 @SuppressWarnings({ "all", "unchecked", "rawtypes" })
 public class Order extends TableImpl<OrderRecord> {
 
-    private static final long serialVersionUID = 1482426849;
+    private static final long serialVersionUID = -435708886;
 
     /**
      * The reference instance of <code>duoduo_order.order</code>
@@ -257,11 +257,6 @@ public class Order extends TableImpl<OrderRecord> {
     public final TableField<OrderRecord, String> CANCEL_REMARK = createField("cancel_remark", org.jooq.impl.SQLDataType.VARCHAR.length(64), this, "");
 
     /**
-     * The column <code>duoduo_order.order.urg_cnt</code>.
-     */
-    public final TableField<OrderRecord, String> URG_CNT = createField("urg_cnt", org.jooq.impl.SQLDataType.VARCHAR.length(64), this, "");
-
-    /**
      * The column <code>duoduo_order.order.product_name</code>.
      */
     public final TableField<OrderRecord, String> PRODUCT_NAME = createField("product_name", org.jooq.impl.SQLDataType.VARCHAR.length(128), this, "");
@@ -305,6 +300,26 @@ public class Order extends TableImpl<OrderRecord> {
      * The column <code>duoduo_order.order.product</code>.
      */
     public final TableField<OrderRecord, String> PRODUCT = createField("product", org.jooq.impl.SQLDataType.CLOB, this, "");
+
+    /**
+     * The column <code>duoduo_order.order.third_id</code>.
+     */
+    public final TableField<OrderRecord, String> THIRD_ID = createField("third_id", org.jooq.impl.SQLDataType.VARCHAR.length(128), this, "");
+
+    /**
+     * The column <code>duoduo_order.order.urge_cnt</code>.
+     */
+    public final TableField<OrderRecord, String> URGE_CNT = createField("urge_cnt", org.jooq.impl.SQLDataType.VARCHAR.length(64), this, "");
+
+    /**
+     * The column <code>duoduo_order.order.order_json_data</code>.
+     */
+    public final TableField<OrderRecord, String> ORDER_JSON_DATA = createField("order_json_data", org.jooq.impl.SQLDataType.CLOB, this, "");
+
+    /**
+     * The column <code>duoduo_order.order.account</code>.
+     */
+    public final TableField<OrderRecord, String> ACCOUNT = createField("account", org.jooq.impl.SQLDataType.VARCHAR.length(128), this, "");
 
     /**
      * Create a <code>duoduo_order.order</code> table reference

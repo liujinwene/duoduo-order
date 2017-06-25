@@ -27,7 +27,7 @@ import org.jooq.impl.UpdatableRecordImpl;
 @SuppressWarnings({ "all", "unchecked", "rawtypes" })
 public class OrderRecord extends UpdatableRecordImpl<OrderRecord> {
 
-    private static final long serialVersionUID = -1635551035;
+    private static final long serialVersionUID = -731876809;
 
     /**
      * Setter for <code>duoduo_order.order.id</code>.
@@ -604,143 +604,185 @@ public class OrderRecord extends UpdatableRecordImpl<OrderRecord> {
     }
 
     /**
-     * Setter for <code>duoduo_order.order.urg_cnt</code>.
-     */
-    public void setUrgCnt(String value) {
-        set(41, value);
-    }
-
-    /**
-     * Getter for <code>duoduo_order.order.urg_cnt</code>.
-     */
-    public String getUrgCnt() {
-        return (String) get(41);
-    }
-
-    /**
      * Setter for <code>duoduo_order.order.product_name</code>.
      */
     public void setProductName(String value) {
-        set(42, value);
+        set(41, value);
     }
 
     /**
      * Getter for <code>duoduo_order.order.product_name</code>.
      */
     public String getProductName() {
-        return (String) get(42);
+        return (String) get(41);
     }
 
     /**
      * Setter for <code>duoduo_order.order.repeat</code>.
      */
     public void setRepeat(String value) {
-        set(43, value);
+        set(42, value);
     }
 
     /**
      * Getter for <code>duoduo_order.order.repeat</code>.
      */
     public String getRepeat() {
-        return (String) get(43);
+        return (String) get(42);
     }
 
     /**
      * Setter for <code>duoduo_order.order.logistics_detail</code>.
      */
     public void setLogisticsDetail(String value) {
-        set(44, value);
+        set(43, value);
     }
 
     /**
      * Getter for <code>duoduo_order.order.logistics_detail</code>.
      */
     public String getLogisticsDetail() {
-        return (String) get(44);
+        return (String) get(43);
     }
 
     /**
      * Setter for <code>duoduo_order.order.attention</code>.
      */
     public void setAttention(String value) {
-        set(45, value);
+        set(44, value);
     }
 
     /**
      * Getter for <code>duoduo_order.order.attention</code>.
      */
     public String getAttention() {
-        return (String) get(45);
+        return (String) get(44);
     }
 
     /**
      * Setter for <code>duoduo_order.order.tel_area</code>.
      */
     public void setTelArea(String value) {
-        set(46, value);
+        set(45, value);
     }
 
     /**
      * Getter for <code>duoduo_order.order.tel_area</code>.
      */
     public String getTelArea() {
-        return (String) get(46);
+        return (String) get(45);
     }
 
     /**
      * Setter for <code>duoduo_order.order.combo_name</code>.
      */
     public void setComboName(String value) {
-        set(47, value);
+        set(46, value);
     }
 
     /**
      * Getter for <code>duoduo_order.order.combo_name</code>.
      */
     public String getComboName() {
-        return (String) get(47);
+        return (String) get(46);
     }
 
     /**
      * Setter for <code>duoduo_order.order.is_follow_arbitration</code>.
      */
     public void setIsFollowArbitration(String value) {
-        set(48, value);
+        set(47, value);
     }
 
     /**
      * Getter for <code>duoduo_order.order.is_follow_arbitration</code>.
      */
     public String getIsFollowArbitration() {
-        return (String) get(48);
+        return (String) get(47);
     }
 
     /**
      * Setter for <code>duoduo_order.order.aftersale</code>.
      */
     public void setAftersale(String value) {
-        set(49, value);
+        set(48, value);
     }
 
     /**
      * Getter for <code>duoduo_order.order.aftersale</code>.
      */
     public String getAftersale() {
-        return (String) get(49);
+        return (String) get(48);
     }
 
     /**
      * Setter for <code>duoduo_order.order.product</code>.
      */
     public void setProduct(String value) {
-        set(50, value);
+        set(49, value);
     }
 
     /**
      * Getter for <code>duoduo_order.order.product</code>.
      */
     public String getProduct() {
+        return (String) get(49);
+    }
+
+    /**
+     * Setter for <code>duoduo_order.order.third_id</code>.
+     */
+    public void setThirdId(String value) {
+        set(50, value);
+    }
+
+    /**
+     * Getter for <code>duoduo_order.order.third_id</code>.
+     */
+    public String getThirdId() {
         return (String) get(50);
+    }
+
+    /**
+     * Setter for <code>duoduo_order.order.urge_cnt</code>.
+     */
+    public void setUrgeCnt(String value) {
+        set(51, value);
+    }
+
+    /**
+     * Getter for <code>duoduo_order.order.urge_cnt</code>.
+     */
+    public String getUrgeCnt() {
+        return (String) get(51);
+    }
+
+    /**
+     * Setter for <code>duoduo_order.order.order_json_data</code>.
+     */
+    public void setOrderJsonData(String value) {
+        set(52, value);
+    }
+
+    /**
+     * Getter for <code>duoduo_order.order.order_json_data</code>.
+     */
+    public String getOrderJsonData() {
+        return (String) get(52);
+    }
+
+    /**
+     * Setter for <code>duoduo_order.order.account</code>.
+     */
+    public void setAccount(String value) {
+        set(53, value);
+    }
+
+    /**
+     * Getter for <code>duoduo_order.order.account</code>.
+     */
+    public String getAccount() {
+        return (String) get(53);
     }
 
     // -------------------------------------------------------------------------
@@ -769,7 +811,7 @@ public class OrderRecord extends UpdatableRecordImpl<OrderRecord> {
     /**
      * Create a detached, initialised OrderRecord
      */
-    public OrderRecord(Long id, Byte innerStatus, Timestamp innerCreateTime, Timestamp innerUpdateTime, String orderId, String userId, String userType, String userName, String specDesc, String productId, String comboId, String shopId, String shopName, String payType, String comboAmount, String comboNum, String postAmount, String totalAmount, String postAddr, String postCode, String postReceiver, String postTel, String logisticsId, String logisticsCode, String logisticsTime, String receiptTime, String buyerWords, String cancelReson, String remark, String orderStatus, String status, String createTime, String updateTime, String finalStatus, String sourceId, String sourceType, String sellerWords, String service, String opId, String opTime, String cancelRemark, String urgCnt, String productName, String repeat, String logisticsDetail, String attention, String telArea, String comboName, String isFollowArbitration, String aftersale, String product) {
+    public OrderRecord(Long id, Byte innerStatus, Timestamp innerCreateTime, Timestamp innerUpdateTime, String orderId, String userId, String userType, String userName, String specDesc, String productId, String comboId, String shopId, String shopName, String payType, String comboAmount, String comboNum, String postAmount, String totalAmount, String postAddr, String postCode, String postReceiver, String postTel, String logisticsId, String logisticsCode, String logisticsTime, String receiptTime, String buyerWords, String cancelReson, String remark, String orderStatus, String status, String createTime, String updateTime, String finalStatus, String sourceId, String sourceType, String sellerWords, String service, String opId, String opTime, String cancelRemark, String productName, String repeat, String logisticsDetail, String attention, String telArea, String comboName, String isFollowArbitration, String aftersale, String product, String thirdId, String urgeCnt, String orderJsonData, String account) {
         super(Order.ORDER);
 
         set(0, id);
@@ -813,15 +855,18 @@ public class OrderRecord extends UpdatableRecordImpl<OrderRecord> {
         set(38, opId);
         set(39, opTime);
         set(40, cancelRemark);
-        set(41, urgCnt);
-        set(42, productName);
-        set(43, repeat);
-        set(44, logisticsDetail);
-        set(45, attention);
-        set(46, telArea);
-        set(47, comboName);
-        set(48, isFollowArbitration);
-        set(49, aftersale);
-        set(50, product);
+        set(41, productName);
+        set(42, repeat);
+        set(43, logisticsDetail);
+        set(44, attention);
+        set(45, telArea);
+        set(46, comboName);
+        set(47, isFollowArbitration);
+        set(48, aftersale);
+        set(49, product);
+        set(50, thirdId);
+        set(51, urgeCnt);
+        set(52, orderJsonData);
+        set(53, account);
     }
 }

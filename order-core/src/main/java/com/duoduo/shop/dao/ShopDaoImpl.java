@@ -116,4 +116,11 @@ public class ShopDaoImpl implements ShopDao {
         query.addConditions(condition);
     }
 
+	@Override
+	public ShopRecord findByAccount(String account) {
+		SelectQuery<ShopRecord>  query = dsl.selectQuery(Tables.SHOP);
+        query.addConditions(Tables.SHOP.ACCOUNT.eq(account));
+        return query.fetchOne();
+	}
+
 }

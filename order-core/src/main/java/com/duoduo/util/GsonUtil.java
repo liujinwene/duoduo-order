@@ -6,21 +6,20 @@ import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
 public class GsonUtil {
-	private static final Gson gson = new GsonBuilder().setDateFormat("yyyy-MM-dd HH:mm:ss").create();  
+	private static final String dateFormatter = "yyyy-MM-dd HH:mm:ss";
+	private static final Gson gson = new GsonBuilder().setDateFormat(dateFormatter).create();
 	
-	public static String toJson(Object classType) {
-		return gson.toJson(classType);
+	
+	public static String toJson(Object object) {
+		return gson.toJson(object);
 	}
 	
-	public static String toJson(Object object, Type type) {
-		return gson.toJson(object, type);
+	public static <T> T fromJson(String json, Class<T> classOfT) {
+		return gson.fromJson(json, classOfT);
 	}
 	
-	public static <T> T fromJson(String json, Class<T> classType) {
-		return gson.fromJson(json, classType);
+	public static <T> T fromJson(String json, Type typeOfT) {
+		return gson.fromJson(json, typeOfT);
 	}
-	
-	public static <T> T fromJson(String json, Type type) {
-		return gson.fromJson(json, type);
-	}
+
 }

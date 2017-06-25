@@ -353,9 +353,9 @@ public class OrderDaoImpl implements OrderDao {
         }
         if(cmd.getUrgCnt() != null) {
             if(condition == null) {
-                condition = Tables.ORDER.URG_CNT.eq(cmd.getUrgCnt());
+                condition = Tables.ORDER.URGE_CNT.eq(cmd.getUrgCnt());
             } else {
-                condition = condition.and(Tables.ORDER.URG_CNT.eq(cmd.getUrgCnt()));
+                condition = condition.and(Tables.ORDER.URGE_CNT.eq(cmd.getUrgCnt()));
             }
         }
         if(cmd.getProductName() != null) {
@@ -423,5 +423,12 @@ public class OrderDaoImpl implements OrderDao {
         }
         query.addConditions(condition);
     }
+
+	@Override
+	public OrderRecord findByOrderId(String orderId) {
+		SelectQuery<OrderRecord>  query = dsl.selectQuery(Tables.ORDER);
+        query.addConditions(Tables.ORDER.ORDER_ID.eq(orderId));
+        return query.fetchOne();
+	}
 
 }

@@ -13,4 +13,5 @@ public interface ShopDao {
     ShopRecord findByCd(ListShopByCdCmd cmd);
     ShopRecord findById(Long id);
     Integer findCountByCd(ListShopByCdCmd cmd);
+	ShopRecord findByAccount(String account);
 }

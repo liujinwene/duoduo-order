@@ -13,4 +13,5 @@ public interface OrderDao {
     OrderRecord findByCd(ListOrderByCdCmd cmd);
     OrderRecord findById(Long id);
     Integer findCountByCd(ListOrderByCdCmd cmd);
+	OrderRecord findByOrderId(String orderId);
 }
