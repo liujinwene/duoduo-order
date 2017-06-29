@@ -9,11 +9,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 import com.duoduo.base.core.CoreServerApp;
 import com.duoduo.order.cmd.ListOrderCmd;
-import com.duoduo.order.dao.OrderDao;
-import com.duoduo.order.po.Order;
 import com.duoduo.order.service.OrderService;
-import com.duoduo.schema.tables.records.OrderRecord;
-import com.duoduo.util.ConvertUtil;
 import com.duoduo.util.GsonUtil;
 
 @RunWith(SpringRunner.class)

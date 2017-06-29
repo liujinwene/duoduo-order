@@ -1,5 +1,6 @@
 package com.duoduo.rechange.po;
 
+import java.math.BigDecimal;
 import java.util.Date;
 
 public class RechangeGood {

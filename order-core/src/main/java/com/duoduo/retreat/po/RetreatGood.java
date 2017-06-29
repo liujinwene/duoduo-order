@@ -1,5 +1,6 @@
 package com.duoduo.retreat.po;
 
+import java.math.BigDecimal;
 import java.util.Date;
 
 public class RetreatGood {
